@@ -1,0 +1,22 @@
+
+Observer mode:
+@Application Scenario: Broadcast mechanism, ie 1:N notification. 1 represents the target object (posting the message) and N represents the observer (subscribing to the message).
+The target object encapsulates the data that needs to be synchronized to multiple subscribers.
+@The way the target object notifies the observer:
+Push----The target sends information by broadcast, and the observer passively receives it.
+Pull----the observer takes the initiative to accept, and decides what content to receive and when to obtain it.
+=======================
+
+
+
+Modo de observador:
+@ Cenário de aplicação: Mecanismo de transmissão, ou seja, notificação 1: N. 1 representa o objeto alvo (postando a mensagem) e N representa o observador (assinando a mensagem).
+O objeto de destino encapsula os dados que precisam ser sincronizados para vários assinantes.
+@ A maneira como o objeto alvo notifica o observador:
+Push ---- O alvo envia informações por broadcast, e o observador o recebe passivamente.
+Puxar - o observador toma a iniciativa de aceitar e decide qual conteúdo receber e quando obtê-lo.
+=======================
+
+
+No JAVA SE, a função do modo observador é implementada com java.util.Observer/Observable.
+O ouvinte no servlet também é o modo observador.
